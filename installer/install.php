@@ -500,9 +500,9 @@ $_SESSION[$guid]['stringReplacement'] = array();
                                     $row->addTextField($setting['name'])->maxLength(50)->isRequired()->setValue('Gibbon');
 
                                     $setting = getSettingByScope($connection2, 'System', 'installType', true);
-//                                    $row = $form->addRow();
-//                                    $row->addLabel($setting['name'], __($setting['nameDisplay']))->description(__($setting['description']));
-//                                    $row->addSelect($setting['name'])->fromString('Production, Testing, Development')->selected('Testing')->isRequired();
+                                    $row = $form->addRow();
+                                    $row->addLabel($setting['name'], __($setting['nameDisplay']))->description(__($setting['description']));
+                                    $row->addSelect($setting['name'])->fromString('Production, Testing, Development')->selected('Testing')->isRequired();
 
                                     $setting = getSettingByScope($connection2, 'System', 'cuttingEdgeCode', true);
                                     $row = $form->addRow();
@@ -892,10 +892,7 @@ $_SESSION[$guid]['stringReplacement'] = array();
                                         echo '</div>';
                                     } else {
                                         echo "<div class='success'>";
-                                        echo sprintf(__('Congratulations, your installation is complete. Feel free to %1$sgo to your Gibbon homepage%2$s and login with the username and password you created.'), "<a href='$absoluteURL'>", '</a>');
-                                        echo '<br/><br/>';
-                                        echo sprintf(__('It is also advisable to follow the %1$sPost-Install and Server Config instructions%2$s.'), "<a target='_blank' href='https://gibbonedu.org/support/administrators/installing-gibbon/'>", '</a>');
-                                        echo '</div>';
+                                        echo sprintf(__('Congratulations, your installation is complete. Feel free to %1$sgo to your SBS homepage%2$s and login with the username and password you created.'), "<a href='$absoluteURL'>", '</a>');
                                     }
                                 }
                             }
