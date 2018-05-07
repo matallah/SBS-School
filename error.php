@@ -21,6 +21,7 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
 <h1>
 	<?php echo __('Oh no!'); ?><br/>
 </h1>
+
 <p>
 	<?php echo __('Something has gone wrong: the Gibbons have escaped!') ?><br/>
 	<br/>
