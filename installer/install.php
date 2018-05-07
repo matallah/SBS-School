@@ -906,26 +906,25 @@ $_SESSION[$guid]['stringReplacement'] = array();
                 ?>
             </div>
             <div id="sidebar">
-                <h2><?php echo __('Welcome To Gibbon') ?></h2>
+                <h2><?php echo __('Welcome To SBS') ?></h2>
                 <p style='padding-top: 7px'>
-                    <?php echo __('Created by teachers, Gibbon is the school platform which solves real problems faced by educators every day.') ?>
+                    <?php echo __('Developed and programmed by Software engineer : Muhammed Atallah.') ?>
                     <br/>
                     <br/>
-                    <?php echo __('Free, open source and flexible, Gibbon can morph to meet the needs of a huge range of schools.') ?>
+                    <?php echo __('SBS can morph to meet the needs of a huge range of schools.') ?>
                     <br/>
                     <br/>
-                    <?php echo sprintf(__('For support, please visit %1$sgibbonedu.org%2$s.'), "<a target='_blank' href='https://gibbonedu.org/support'>", '</a>') ?>
+                    For support please contact me with my email:
+                    <a href="mailto:m3atallah@gmail.com?Subject=Hello%20again" target="_top">m3atallah@gmail.com</a>
                 </p>
             </div>
             <br style="clear: both">
         </div>
         <div id="footer">
-            <?php echo __('Powered by') ?> <a href="https://gibbonedu.org">Gibbon</a> v<?php echo $version ?> &#169; <a
-                    href="http://rossparker.org">Ross Parker</a> 2010-<?php echo date('Y') ?><br/>
-            <span style='font-size: 90%; '>
-                        <?php echo __('Created under the') ?> <a
-                        href="https://www.gnu.org/licenses/gpl.html">GNU GPL</a> at <a href='http://www.ichk.edu.hk'>ICHK</a>
-                    </span><br/><br/>
+            For support please contact me with my email:
+            <a href="mailto:m3atallah@gmail.com?Subject=Hello%20again" target="_top">m3atallah@gmail.com</a>
+            <br/>
+            Powered by Software engineer : Muhammed Atallah
             <img style='z-index: 9999; margin-top: -82px; margin-left: 850px; opacity: 0.8' alt='Logo Small'
                  src='../themes/Default/img/logoFooter.png'/>
         </div>
