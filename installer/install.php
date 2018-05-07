@@ -456,18 +456,18 @@ $_SESSION[$guid]['stringReplacement'] = array();
                                     $punctuation = getSettingByScope($connection2, 'System', 'passwordPolicyNonAlphaNumeric');
                                     $minLength = getSettingByScope($connection2, 'System', 'passwordPolicyMinLength');
 
-                                    if ($alpha == 'Y') {
-                                        $password->addValidation('Validate.Format', 'pattern: /.*(?=.*[a-z])(?=.*[A-Z]).*/, failureMessage: "' . __('Does not meet password policy.') . '"');
-                                    }
-                                    if ($numeric == 'Y') {
-                                        $password->addValidation('Validate.Format', 'pattern: /.*[0-9]/, failureMessage: "' . __('Does not meet password policy.') . '"');
-                                    }
-                                    if ($punctuation == 'Y') {
-                                        $password->addValidation('Validate.Format', 'pattern: /[^a-zA-Z0-9]/, failureMessage: "' . __('Does not meet password policy.') . '"');
-                                    }
-                                    if (!empty($minLength) && is_numeric($minLength)) {
-                                        $password->addValidation('Validate.Length', 'minimum: ' . $minLength . ', failureMessage: "' . __('Does not meet password policy.') . '"');
-                                    }
+//                                    if ($alpha == 'Y') {
+//                                        $password->addValidation('Validate.Format', 'pattern: /.*(?=.*[a-z])(?=.*[A-Z]).*/, failureMessage: "' . __('Does not meet password policy.') . '"');
+//                                    }
+//                                    if ($numeric == 'Y') {
+//                                        $password->addValidation('Validate.Format', 'pattern: /.*[0-9]/, failureMessage: "' . __('Does not meet password policy.') . '"');
+//                                    }
+//                                    if ($punctuation == 'Y') {
+//                                        $password->addValidation('Validate.Format', 'pattern: /[^a-zA-Z0-9]/, failureMessage: "' . __('Does not meet password policy.') . '"');
+//                                    }
+//                                    if (!empty($minLength) && is_numeric($minLength)) {
+//                                        $password->addValidation('Validate.Length', 'minimum: ' . $minLength . ', failureMessage: "' . __('Does not meet password policy.') . '"');
+//                                    }
 
                                     $row = $form->addRow();
                                     $row->addLabel('passwordConfirm', __('Confirm Password'));
@@ -500,9 +500,9 @@ $_SESSION[$guid]['stringReplacement'] = array();
                                     $row->addTextField($setting['name'])->maxLength(50)->isRequired()->setValue('Gibbon');
 
                                     $setting = getSettingByScope($connection2, 'System', 'installType', true);
-                                    $row = $form->addRow();
-                                    $row->addLabel($setting['name'], __($setting['nameDisplay']))->description(__($setting['description']));
-                                    $row->addSelect($setting['name'])->fromString('Production, Testing, Development')->selected('Testing')->isRequired();
+//                                    $row = $form->addRow();
+//                                    $row->addLabel($setting['name'], __($setting['nameDisplay']))->description(__($setting['description']));
+//                                    $row->addSelect($setting['name'])->fromString('Production, Testing, Development')->selected('Testing')->isRequired();
 
                                     $setting = getSettingByScope($connection2, 'System', 'cuttingEdgeCode', true);
                                     $row = $form->addRow();
