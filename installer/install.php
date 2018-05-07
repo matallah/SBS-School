@@ -254,7 +254,7 @@ $_SESSION[$guid]['stringReplacement'] = array();
 
                     $row = $form->addRow();
                     $row->addLabel('databasePassword', __('Database Password'));
-                    $row->addPassword('databasePassword')->isRequired()->maxLength(255);
+                    $row->addPassword('databasePassword')->maxLength(255);
 
                     $row = $form->addRow();
                     $row->addLabel('demoData', __('Install Demo Data?'));
